@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Egor Kuzmin">
+    <meta name="description" content="Портфолио-страница">
     <title>Kuzmin George - M33081</title>
     <link type="text/css" rel="stylesheet" href="css/outlines.css">
 </head>
@@ -9,8 +11,9 @@
 <header><h1>Резюме-портфолио</h1></header>
 <main>
     <section>
-    <aside><h4>Тотемное животное</h4>
-        <pre style="margin-top: -3em">       /\_/\
+        <aside><h4>Тотемное животное</h4>
+            <pre style="margin-top: -3em">
+       /\_/\
       _(o o)_
 ))   ( _/^\_ )
  ((   )  ^  (
@@ -19,11 +22,12 @@
  (((   ||  ||   )
    \\_=||__||=_/
         </pre>
-    </aside>
+        </aside>
         <article>
-        <h2>ФИО: Кузьмин Егор Юрьевич<br/><br/>Место учёбы: Университет ИТМО<br/><br/>Языки: Русский, English</h2>
-        <p>Студент третьего курса Университета ИТМО факультета Информационных технологий и программирования</p>
-            <br/><br/><time datetime="07.09.2020">07.09.2020</time>
+            <h2>ФИО: Кузьмин Егор Юрьевич<br/><br/>Место учёбы: Университет ИТМО<br/><br/>Языки: Русский, English</h2>
+            <p>Студент третьего курса Университета ИТМО факультета Информационных технологий и программирования</p>
+            <br/><br/>
+            <time datetime="07.09.2020">07.09.2020</time>
         </article>
     </section>
     <section>
@@ -32,65 +36,69 @@
             <li>Написал чат-бота на JAVA для Telegram</li>
             <dl>
                 <dt>JAVA</dt>
-                <dd>Cтрого типизированный объектно-ориентированный язык программирования общего назначения, разработанный компанией Sun Microsystems.
-                    Разработка ведётся сообществом, организованным через Java Community Process, язык и основные реализующие его технологии распространяются по лицензии GPL</dd>
+                <dd>Cтрого типизированный объектно-ориентированный язык программирования общего назначения,
+                    разработанный компанией Sun Microsystems.
+                    Разработка ведётся сообществом, организованным через Java Community Process, язык и основные
+                    реализующие его технологии распространяются по лицензии GPL
+                </dd>
             </dl>
         </ul>
-        <br/><br/><time datetime="07.09.2020">07.09.2020</time>
+        <br/><br/>
+        <time datetime="07.09.2020">07.09.2020</time>
     </section>
     <section>
         <h2>Код</h2>
-      <p>  <code>
+        <p><code>
             #!/bin/bash<br/>
-          <br/>
+            <br/>
             #1<br/>
             rm -r ~/test<br/>
-          <br/>
+            <br/>
             cd ~<br/>
             mkdir test<br/>
             read<br/>
-          <br/>
-           <strong>#2<br/>
-            directory=0<br/>
-            files=0<br/>
-            cd test<br/>
-            for File in /etc/*; do<br/>
-            if [[ -d "$File" ]]; then<br/>
-            echo "$File/" >> list<br/>
-            let directory=$directory+1<br/>
-            else<br/>
-            echo "$File" >> list<br/>
-            fi<br/>
-            done<br/>
-          <br/>
-            for File in /etc/.*; do<br/>
-            if [[ -d "$File" ]]; then<br/>
-            echo "$File/" >> list<br/>
-            else<br/>
-            let files=$files+1<br/>
-            echo "$File" >> list<br/>
-            fi<br/>
-            done<br/>
-            read<br/></strong>
-          <br/>
+            <br/>
+            <strong>#2<br/>
+                directory=0<br/>
+                files=0<br/>
+                cd test<br/>
+                for File in /etc/*; do<br/>
+                if [[ -d "$File" ]]; then<br/>
+                echo "$File/" >> list<br/>
+                let directory=$directory+1<br/>
+                else<br/>
+                echo "$File" >> list<br/>
+                fi<br/>
+                done<br/>
+                <br/>
+                for File in /etc/.*; do<br/>
+                if [[ -d "$File" ]]; then<br/>
+                echo "$File/" >> list<br/>
+                else<br/>
+                let files=$files+1<br/>
+                echo "$File" >> list<br/>
+                fi<br/>
+                done<br/>
+                read<br/></strong>
+            <br/>
             #3<br/>
-          <br/>
-            echo "Files = "  $files >> list<br/>
-            echo "Directories = "  $directory >> list<br/>
+            <br/>
+            echo "Files = " $files >> list<br/>
+            echo "Directories = " $directory >> list<br/>
             read<br/>
-          <br/>
+            <br/>
             #4<br/>
             mkdir links<br/>
             read<br/>
-          <br/>
+            <br/>
             #5<br/>
             ln ~/test/list ~/test/links/list_hlink<br/>
             read<br/>
-          <br/>
+            <br/>
             #6<br/>
             ln -s ~/test/list ~/test/links/list_slink<br/>
             read<br/>
-          <br/>
+            <br/>
             #7<br/>
             echo "list"<br/>
             ls -l ~/test/list | cut -d " " -f2<br/>
@@ -99,11 +107,11 @@
             echo "list_slink"<br/>
             ls -l ~/test/links/list_slink | cut -d " " -f2<br/>
             read<br/>
-          <br/>
+            <br/>
             #8<br/>
             wc -l ~/test/list | cut -d " " -f1 >> ~/test/links/list_hlink<br/>
             read<br/>
-          <br/>
+            <br/>
             #9<br/>
             file1=~/test/links/list_hlink<br/>
             file2=~/test/links/list_slink<br/>
@@ -112,80 +120,80 @@
             echo "YES"<br/>
             fi<br/>
             read<br/>
-          <br/>
+            <br/>
             #10<br/>
             mv ~/test/list ~/test/list1<br/>
             read<br/>
-          <br/>
+            <br/>
             #11<br/>
             if cmp $file1 $file2;<br/>
             then<br/>
             echo "YES"<br/>
             fi<br/>
             read<br/>
-          <br/>
+            <br/>
             #12<br/>
             rm ~/list_link<br/>
             ln ~/test/list1 ~/list_link<br/>
             read<br/>
-          <br/>
+            <br/>
             #13<br/>
             find /etc -name "*.conf" 2>/dev/null > ~/list_conf<br/>
             read<br/>
-          <br/>
+            <br/>
             #14<br/>
             find /etc -name "*.d" 2>/dev/null > ~/list_d<br/>
             read<br/>
-          <br/>
+            <br/>
             #15<br/>
             cat ~/list_conf ~/list_d > ~/list_conf_d<br/>
             read<br/>
-          <br/>
+            <br/>
             #16<br/>
             mkdir ~/test/.sub<br/>
             read<br/>
-          <br/>
+            <br/>
             #17<br/>
             cp ~/list_conf_d ~/test/.sub/<br/>
             read<br/>
-          <br/>
+            <br/>
             #18<br/>
             cp -b ~/list_conf_d ~/test/.sub/<br/>
             read<br/>
-          <br/>
+            <br/>
             #19<br/>
             find ~/test/ -name "*" 2>/dev/null<br/>
             read<br/>
-          <br/>
+            <br/>
             #20<br/>
             man man > ~/man.txt<br/>
             read<br/>
-          <br/>
+            <br/>
             #21<br/>
             split -b 1024 ~/man.txt copy.<br/>
             read<br/>
-          <br/>
+            <br/>
             #22<br/>
             rm -r /root/man.dir<br/>
             mkdir ~/man.dir<br/>
             read<br/>
-          <br/>
+            <br/>
             #23<br/>
             mv copy.* ~/man.dir<br/>
             read<br/>
-          <br/>
+            <br/>
             #24<br/>
             cat ~/man.dir/copy.* > ~/man.dir/man.txt<br/>
             rm ~/man.dir/copy.*<br/>
             read<br/>
-          <br/>
+            <br/>
             #25<br/>
             if cmp -s ~/man.dir/man.txt ~/man.txt;<br/>
             then<br/>
             echo "YES"<br/>
             fi<br/>
             read<br/>
-          <br/>
+            <br/>
             #26<br/>
             echo "First<br/>
             Part<br/>
@@ -193,7 +201,7 @@
             the<br/>
             beggining" > ~/man.txt2<br/>
             cat ~/man.txt >> ~/man.txt2<br/>
-            cat ~/man.txt2  > ~/man.txt<br/>
+            cat ~/man.txt2 > ~/man.txt<br/>
             echo "Second<br/>
             Part<br/>
             at<br/>
@@ -201,40 +209,44 @@
             end" >> ~/man.txt<br/>
             rm ~/man.txt2<br/>
             read<br/>
-          <br/>
+            <br/>
             #27<br/>
             diff -u ~/man.txt ~/man.dir/man.txt > ~/difference<br/>
             read<br/>
-          <br/>
+            <br/>
             #28<br/>
             mv ~/difference ~/man.dir/<br/>
             read<br/>
-          <br/>
+            <br/>
             #29<br/>
             patch ~/man.dir/man.txt ~/man.dir/difference<br/>
             read<br/>
-          <br/>
+            <br/>
             #30<br/>
             if cmp -s ~/man.txt ~/man.dir/man.txt;<br/>
             then<br/>
             echo "YES"<br/>
             fi<br/>
-        </code> <br/><br/><time datetime="07.09.2020">07.09.2020</time></p>
+        </code> <br/><br/>
+            <time datetime="07.09.2020">07.09.2020</time>
+        </p>
     </section>
     <section>
         <h2>Цитата: </h2>
         <p><em>Насколько прекраснее была бы жизнь, если бы все мы были такими, какими нас видят наши коты и собаки</em>
-            <br/><br/><time datetime="07.09.2020">07.09.2020</time></p>
+            <br/><br/>
+            <time datetime="07.09.2020">07.09.2020</time>
+        </p>
 
     </section>
 </main>
 <footer>
     <nav style=" width: 350px; float: right;">
-    <a href="">Вконтакте</a>
-    <a href="">Instagram</a>
-    <a href="">Facebook</a>
-</nav>
-   <p style = "width: 300px;">Все права защищены правообладателем</p>
+        <a href="">Вконтакте</a>
+        <a href="">Instagram</a>
+        <a href="">Facebook</a>
+    </nav>
+    <p style="width: 300px;">Все права защищены правообладателем</p>
 </footer>
 </body>
 </html>
