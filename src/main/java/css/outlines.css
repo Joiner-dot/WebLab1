@@ -4,6 +4,12 @@
   font-style: normal;
 }
 
+
+@font-face {
+  font-family: "RobotoCondensed-Bold";
+  src: url("../fonts/RobotoCondensed-Bold.ttf");
+}
+
 @font-face {
   font-weight: 700;
   font-family: "Montserrat";
@@ -16,6 +22,7 @@ body {
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
+  background-color: #7fc1ff;
 }
 
 body {
@@ -29,6 +36,10 @@ header::before,
 footer::before,
 main::before {
   color: #7fc1ff;
+}
+
+h2{
+  font-family: "Times New Roman", serif;
 }
 
 main,
@@ -62,7 +73,7 @@ h1 {
   font-size: 18px;
   background-color: #ffffff;
   border: 2px solid #ff994f;
-}
+  font-family: "RobotoCondensed-Bold", serif;}
 
 h1::before {
   content: "h1";
@@ -70,6 +81,7 @@ h1::before {
 }
 h4{
   text-align: center;
+  font-family: "Times New Roman", serif;
 }
 
 p {
@@ -138,4 +150,8 @@ aside::before {
 
 nav::before {
   content: "nav";
+}
+
+pre{
+  margin-top: -3em
 }
