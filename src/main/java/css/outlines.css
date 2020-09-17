@@ -22,12 +22,13 @@ body {
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
-  background-color: #7fc1ff;
 }
 
 body {
   min-width: 430px;
   border: 2px dashed #c7e4ff;
+  background: #7fc1ff;
+
 }
 
 html::before,
@@ -79,6 +80,11 @@ h1::before {
   content: "h1";
   color: #ff994f;
 }
+
+h2{
+  font-family: "Times New Roman", serif;
+}
+
 h4{
   text-align: center;
   font-family: "Times New Roman", serif;
